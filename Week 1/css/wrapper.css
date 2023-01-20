@@ -1,0 +1,11 @@
+.wrapper {
+  width: 79.1666666667vw;
+  margin: 0 10.4166666667vw 0 10.4166666667vw;
+}
+@media (max-width: 700px) {
+  .wrapper {
+    width: 89.3333333333vw;
+  }
+}
+
+/*# sourceMappingURL=wrapper.css.map */

@@ -1,0 +1,10 @@
+$adapt-res: 700px;
+
+.wrapper {
+  width: calc(100vw - 100vw * (300 / 1440));
+  margin: 0 calc(100vw * (150 / 1440)) 0 calc(100vw * (150 / 1440));
+  @media (max-width:$adapt-res) {
+    width: calc(100vw * (375 - 40) / 375);
+    //margin: 0;
+  }
+}
