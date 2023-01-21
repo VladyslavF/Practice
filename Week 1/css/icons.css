@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?l6xtv9');
-  src:  url('fonts/icomoon.eot?l6xtv9#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?l6xtv9') format('truetype'),
-    url('fonts/icomoon.woff?l6xtv9') format('woff'),
-    url('fonts/icomoon.svg?l6xtv9#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?72vcv2');
+  src:  url('fonts/icomoon.eot?72vcv2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?72vcv2') format('truetype'),
+    url('fonts/icomoon.woff?72vcv2') format('woff'),
+    url('fonts/icomoon.svg?72vcv2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,39 +25,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-down:after {
+.icon-arrow-black:before {
+  content: "\e900";
+  color: #252525;
+}
+.icon-arrow-down:before {
   content: "\e900";
   color: #fff;
 }
-.icon-arrow-right:after {
+.icon-arrow-right:before {
   content: "\e901";
   color: #fff;
 }
-.icon-cart:after {
+.icon-cart:before {
   content: "\e902";
   color: #fff;
 }
-.icon-favourites:after {
+.icon-favourites:before {
   content: "\e903";
   color: #fff;
 }
-.icon-ig:after {
+.icon-ig:before {
   content: "\e904";
   color: #e0bea2;
 }
-.icon-logo:after {
+.icon-logo:before {
   content: "\e905";
   color: #fff;
 }
-.icon-profile:after {
+.icon-profile:before {
   content: "\e906";
   color: #fff;
 }
-.icon-search:after {
+.icon-search:before {
   content: "\e907";
   color: #fff;
 }
-.icon-tg:after {
+.icon-tg:before {
   content: "\e908";
   color: #e0bea2;
 }

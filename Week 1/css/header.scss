@@ -2,19 +2,19 @@ $adapt-res: 700px;
 
 .header {
   display: grid;
+  width: 100%;
   grid-template-columns: 0.3fr 0.7fr 1fr 0.4fr 0.6fr;
-  position: absolute;
-  margin: calc(100vw * 0.020833) calc(100vw * 0.20833 / 2) 0 calc(100vw * 0.20833 / 2);
+  margin: calc(100vw * 25 / 1440) 0 0 0;
   left: 0;
   right: 0;
   align-items: center;
   justify-items: left;
-  color: #F5F5F5;
+  color: #252525;
   font-size: max(12px, calc(100vw * (18 / 1440)));
   line-height: max(12px, calc(100vw * (21 / 1440)));
 
   @media (max-width: $adapt-res) {
-    margin: calc(100vw * (25 / 375));
+    margin: calc(100vw * (25 / 375)) 0 0 0;
     grid-template-columns: 0.3fr 0.7fr 1fr 1fr;
   }
 
@@ -31,17 +31,20 @@ $adapt-res: 700px;
     align-items: center;
     justify-self: center;
     //font-size: 18px;
+
     font-size: max(9px, calc(100vw * 0.0125));
     @media (max-width: $adapt-res) {
       display: none;
     }
   }
-
   &__item {
     margin: 0 calc(100vw * 0.017361) 0 0;
     & a {
       text-decoration: none;
-      color: #ffffff;
+      color: #252525;
+    }
+    &_active a{
+      color: #E0BEA2;
     }
   }
 
@@ -64,7 +67,7 @@ $adapt-res: 700px;
     grid-template-columns: 1fr 1fr;
     text-align: left;
     span {
-      font-size: (100vw * 0.006944);
+      font-size: (100vw * 6 / 1440);
     }
     @media (max-width: $adapt-res) {
       order: 0;
@@ -95,9 +98,8 @@ $adapt-res: 700px;
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: repeat(4, 1fr);
-
+    justify-self: end;
     @media (max-width: $adapt-res) {
-      justify-self: end;
       img:first-child {
         display: none;
       }
@@ -108,8 +110,8 @@ $adapt-res: 700px;
     }
     //width: 100%;
     img {
-      padding: 0 calc(100vw * 0.010416) 0 0;
-      width: calc(100vw * 0.024305);
+      margin: 0 0 0 calc(100vw * (30 / 1440));
+      width: calc(100vw * (25 / 1440));
       @media (max-width: $adapt-res) {
         width: calc(100vw * (20 / 375));
         margin: 0 0 0 calc(100vw * (20 / 375));

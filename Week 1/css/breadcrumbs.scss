@@ -1,0 +1,24 @@
+$adapt-res: 700px;
+.breadcrumbs {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-column-gap: calc(100vw * 11 / 1440);
+  margin: calc(100vw * 40 / 1440) 0 0 0;
+  align-items: center;
+
+  @media (max-width: $adapt-res) {
+    grid-column-gap: calc(100vw * 9 / 375);
+    margin: calc(100vw * 15 / 375) 0 0 0;
+  }
+
+  &__link {
+    font-size: max(10px, calc(100vw * 16 / 1440));
+    line-height: max(10px, calc(100vw * 19 / 1440));
+    font-style: normal;
+    font-weight: 300;
+    @media (max-width: $adapt-res) {
+      font-size: calc(100vw * 16 / 375);
+      line-height: calc(100vw * 19 / 375);
+    }
+  }
+}
