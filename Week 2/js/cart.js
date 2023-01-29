@@ -21,7 +21,13 @@ document.querySelectorAll('.order__sizes').forEach(function (item) {
         parent.querySelector('.order__dropdown').classList.toggle('opened');
     });
 });
-
+document.querySelectorAll('.order__remove>img').forEach(function (item) {
+    item.addEventListener('click', (event) => {
+        let elem = event.target;
+        let parent = elem.parentNode;
+        parent.parentNode.parentNode.removeChild(parent.parentNode);
+    });
+});
 document.querySelectorAll('.order__count>.order__button-minus').forEach(function (item) {
     item.addEventListener('click', (event) => {
         let elem = event.target.parentNode;
