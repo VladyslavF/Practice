@@ -1,0 +1,49 @@
+$adapt-res: 700px;
+.burger {
+  position: absolute;
+  margin-top: calc(100vw * 10 / 1440);
+  width: max(34px, calc(100vw * 34 / 1440));
+  height: max(34px, calc(100vw * 34 / 1440));
+  align-content: center;
+  align-items: center;
+
+
+  &__lines>* {
+    display: block;
+    position: absolute;
+    background-color: #e0bea2;
+    transition-duration: .25s;
+  }
+  &__line1 {
+    margin-top: 0;
+    width: max(34px, calc(100vw * 34 / 1440));
+    height: max(4px, calc(100vw * 4 / 1440));
+
+    &.rotated {
+      width: 0;
+    }
+  }
+
+  &__line2 {
+    margin-top: max(9px, calc(100vw * 9 / 1440));
+    width: max(26px, calc(100vw * 26 / 1440));
+    height: max(4px, calc(100vw * 4 / 1440));
+
+    &.rotated {
+      width:max(34px, calc(100vw * 34 / 1440));
+      transform: rotate(45deg);
+    }
+  }
+
+  &__line3 {
+    margin-top: max(18px, calc(100vw * 18 / 1440));
+    width: max(18px, calc(100vw * 18 / 1440));
+    height: max(4px, calc(100vw * 4 / 1440));
+
+    &.rotated {
+      margin-top: max(9px, calc(100vw * 9 / 1440));
+      width: max(34px, calc(100vw * 34 / 1440));
+      transform: rotate(135deg);
+    }
+  }
+}

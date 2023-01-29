@@ -1,0 +1,27 @@
+.breadcrumbs {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-column-gap: 0.7638888889vw;
+  margin: 2.7777777778vw 0 0 0;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .breadcrumbs {
+    grid-column-gap: 2.4vw;
+    margin: 4vw 0 0 0;
+  }
+}
+.breadcrumbs__link {
+  font-size: max(10px, 1.1111111111vw);
+  line-height: max(10px, 1.3194444444vw);
+  font-style: normal;
+  font-weight: 300;
+}
+@media (max-width: 700px) {
+  .breadcrumbs__link {
+    font-size: 4.2666666667vw;
+    line-height: 5.0666666667vw;
+  }
+}
+
+/*# sourceMappingURL=breadcrumbs.css.map */

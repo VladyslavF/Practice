@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YANKI | Catalog</title>
+    <link rel="stylesheet" href="css/catalog.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/catalog.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="burger">
+        <div class="burger__lines">
+            <span class="burger__line1"></span>
+            <span class="burger__line2"></span>
+            <span class="burger__line3"></span>
+        </div>
+    </div>
+<header class="header active">
+    <nav class="header__menu">
+        <div class="header__item">
+            <a href="">NEW</a>
+        </div>
+        <div class="header__item header__item_active">
+            <a href="">КАТАЛОГ</a>
+        </div>
+        <div class="header__item">
+            <a href="">О НАС</a>
+        </div>
+    </nav>
+    <div class="header__logo">
+        <img src="icons/logo-new.svg" alt="">
+    </div>
+    <div class="header__locale">
+        <div class="header__lang">
+            <div class="lang__title"> RU <span class="icon-arrow-black"></span>
+            </div>
+            <div class="lang__dropdown">
+                <div class="lang__item">UA</div>
+                <div class="lang__item">EN</div>
+            </div>
+        </div>
+        <div class="header__currency">
+            <div class="currency__title"> UAH <span class="icon-arrow-black"></span></div>
+            <div class="currency__dropdown">
+                <div class="currency__item">USD</div>
+                <div class="currency__item">EUR</div>
+            </div>
+        </div>
+    </div>
+    <div class="header__icons">
+        <img src="icons/search-black.svg" alt="">
+        <img src="icons/profile-new.svg" alt="">
+        <img src="icons/favourites-new.svg" alt="">
+        <img src="icons/cart-new.svg" alt="">
+    </div>
+</header>
+    <div class="header__submenu">
+        <nav class="header__menu">
+            <div class="header__item">
+                <a href="">ОПЛАТА И ДОСТАВКА</a>
+            </div>
+            <div class="header__item">
+                <a href="">УСЛОВИЯ ВОЗВРАТА</a>
+            </div>
+            <div class="header__item">
+                <a href="">КОНТАКТЫ</a>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__search">
+                    <input type="text" id="search" placeholder="Введите ваш запрос">
+                    <label for="search">
+                        <img src="icons/search-black.svg" alt="">
+                    </label>
+                </div>
+                <div class="mobile-menu__currency">
+                    <div class="currency__title"> UAH <span class="icon-arrow-black"></span></div>
+                    <div class="currency__dropdown">
+                        <div class="currency__item">USD</div>
+                        <div class="currency__item">EUR</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu__list">
+                <div class="mobile-menu__link">
+                    <span class="icon-profile" style="color: #e0bea2;"></span>
+                    <a href="">ЛИЧНЫЙ КАБИНЕТ </a>
+                </div>
+                <div class="mobile-menu__link">
+                    <a href="">NEW</a>
+                </div>
+                <div class="mobile-menu__link">
+                    <a href="">КАТАЛОГ</a>
+                </div>
+                <div class="mobile-menu__link">
+                    <a href="">О НАС</a>
+                </div>
+                <div class="mobile-menu__link">
+                    <a href="">УСЛОВИЯ ВОЗВРАТА</a>
+                </div>
+                <div class="mobile-menu__link">
+                    <a href="">КОНТАКТЫ</a>
+                </div>
+            </div>
+            <div class="mobile-menu__footer">
+                <div class="mobile-menu__column">
+                    <ul>
+                        <li>
+                            <a href=""><span class="icon-ig"></span></a>
+                            <a href=""><span class="icon-tg"></span></a>
+                        </li>
+                        <li>+38(073) 096 36 44</li>
+                        <li>info@yanki.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="breadcrumbs">
+    <a class="breadcrumbs__link">
+        Главная
+    </a>
+    <img src="icons/arrow-down-small.svg" style="transform: rotate(270deg);" alt="">
+    <a class="breadcrumbs__link">
+        Каталог
+    </a>
+</div>
+<div class="main">
+    <div class="main__filter-title">
+        Фильтры
+        <img src="icons/filter.svg" alt="">
+        <img src="icons/arrow-down-small.svg" alt="">
+    </div>
+    <div class="main__filters">
+        <div class="main__filter-item">
+            <div class="main__filter-subtitle">
+            Размер <span class="icon-arrow-down-small"></span>
+            </div>
+            <div class="main__subfilters">
+                <div class="subfilters__item">
+                    S
+                </div>
+                <div class="subfilters__item">
+                    M
+                </div>
+                <div class="subfilters__item">
+                    L
+                </div>
+            </div>
+        </div>
+        <div class="main__filter-item">
+            <div class="main__filter-subtitle"> Цвет <span class="icon-arrow-down-small"></span> </div>
+            <div class="main__subfilters">
+                <div class="subfilters__item">
+                    Синий
+                </div>
+                <div class="subfilters__item">
+                    Кремовый
+                </div>
+                <div class="subfilters__item">
+                    Белый
+                </div>
+            </div>
+        </div>
+        <div class="main__filter-item">
+            <div class="main__filter-subtitle"> Цена <span class="icon-arrow-down-small"></span> </div>
+            <div class="main__subfilters">
+                <div class="subfilters__item">
+                    1000 - 2000
+                </div>
+                <div class="subfilters__item">
+                    2000 - 3000
+                </div>
+                <div class="subfilters__item">
+                    3000+
+                </div>
+            </div>
+        </div>
+        <div class="main__filter-item">
+            <div class="main__filter-subtitle"> Сортировать по <span class="icon-arrow-down-small"></span> </div>
+            <div class="main__subfilters">
+                <div class="subfilters__item">
+                    Возрастанию
+                </div>
+                <div class="subfilters__item">
+                    Убыванию
+                </div>
+                <div class="subfilters__item">
+                    Рейтингу
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="main__gallery">
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-1.png" alt="">
+            <div class="main__name main__name_new">
+                Белая куртка
+            </div>
+            <div class="main__price">
+                2900 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XXS
+                </div>
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    S
+                </div>
+                <div class="main__size">
+                    M
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-2.png" alt="">
+            <div class="main__name">
+                Синее пальто
+            </div>
+            <div class="main__price">
+                3150 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    M
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-3.png" alt="">
+            <div class="main__name">
+                Бежевая шуба
+            </div>
+            <div class="main__price">
+                4200 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    S
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-4.png" alt="">
+            <div class="main__name main__name_new">
+                Синяя парка
+            </div>
+            <div class="main__price">
+                2900 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XXS
+                </div>
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    S
+                </div>
+                <div class="main__size">
+                    M
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-1.png" alt="">
+            <div class="main__name main__name_new">
+                Белая куртка
+            </div>
+            <div class="main__price">
+                2900 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XXS
+                </div>
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    S
+                </div>
+                <div class="main__size">
+                    M
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-2.png" alt="">
+            <div class="main__name">
+                Синее пальто
+            </div>
+            <div class="main__price">
+                3150 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    M
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-1.png" alt="">
+            <div class="main__name main__name_new">
+                Белая куртка
+            </div>
+            <div class="main__price">
+                2900 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XXS
+                </div>
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    S
+                </div>
+                <div class="main__size">
+                    M
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-2.png" alt="">
+            <div class="main__name">
+                Синее пальто
+            </div>
+            <div class="main__price">
+                3150 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    M
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-3.png" alt="">
+            <div class="main__name">
+                Бежевая шуба
+            </div>
+            <div class="main__price">
+                4200 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    S
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-4.png" alt="">
+            <div class="main__name main__name_new">
+                Синяя парка
+            </div>
+            <div class="main__price">
+                2900 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XXS
+                </div>
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    S
+                </div>
+                <div class="main__size">
+                    M
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-1.png" alt="">
+            <div class="main__name main__name_new">
+                Белая куртка
+            </div>
+            <div class="main__price">
+                2900 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XXS
+                </div>
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    S
+                </div>
+                <div class="main__size">
+                    M
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main__item">
+            <div class="main__fav-button">
+                <span class="icon-favourites"></span>
+            </div>
+            <img src="images/img-c-2.png" alt="">
+            <div class="main__name">
+                Синее пальто
+            </div>
+            <div class="main__price">
+                3150 грн
+            </div>
+            <div class="main__sizes">
+                <div class="main__size">
+                    XS
+                </div>
+                <div class="main__size">
+                    M
+                </div>
+                <div class="main__size">
+                    L
+                </div>
+            </div>
+            <div class="main__colors">
+                <div class="main__color">
+                    <img src="icons/color-white.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-navy.svg" alt="">
+                </div>
+                <div class="main__color">
+                    <img src="icons/color-beige.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside class="main__sidebar">
+        <div class="main__title">
+            Каталог <span class="icon-arrow-down"></span>
+        </div>
+        <div class="main__links">
+            <a href="">New</a>
+            <a href="">Bestsellers</a>
+            <a href="">Верхняя одежда</a>
+            <a href="">Шубы</a>
+            <a href="">Тренчи</a>
+            <a href="">Пальто</a>
+            <a href="">Пуховики и жилеты</a>
+            <a href="">Костюмы</a>
+            <a href="">Жакеты</a>
+            <a href="">Платья</a>
+            <a href="">Рубашки и блузы</a>
+            <a href="">Юбки</a>
+            <a href="">Футболки и топы</a>
+            <a href="">Аксессуары</a>
+            <a href="">Sale</a>
+            <a href="">Summer</a>
+            <a href="">Посмотреть всё</a>
+       </div>
+    </aside>
+</div>
+    <footer class="footer">
+        <div class="footer__columns">
+            <div class="footer__column">
+                <div class="footer__title">
+                    КОМПАНИЯ <span class="icon-arrow-down-small"></span>
+                </div>
+                <ul class="footer__list">
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <div class="footer__title" id="useful">
+                    ПОЛЕЗНОЕ <span class="icon-arrow-down-small"></span>
+                </div>
+                <ul class="footer__list">
+                    <li><a href="">Оплата и доставка</a></li>
+                    <li><a href="">Условия возврата</a></li>
+                    <li><a href="">Бонусная система</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <div class="footer__title" id="to-buyer">
+                    ПОКУПАТЕЛЮ <span class="icon-arrow-down-small"></span>
+                </div>
+                <ul class="footer__list">
+                    <li><a href="">Избранное</a></li>
+                    <li><a href="">Публичная оферта</a></li>
+                    <li><a href="">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <div class="footer__title">
+                    КОНТАКТЫ
+                </div>
+                <ul class="footer__list opened">
+                    <li id="wtf">
+                        <a href="" class="icon-ig"></a>
+                        <a href="" class="icon-tg"></a>
+                    </li>
+                    <li>+38(073) 096 36 44</li>
+                    <li>info@yanki.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            ©️ 2021 Yanki. All rights reserved
+        </div>
+    </footer>
+</div>
+</body>
+</html>
