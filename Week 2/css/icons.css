@@ -60,6 +60,10 @@
   content: "\e906";
   color: #fff;
 }
+.icon-profile-new:before {
+  content: "\e906";
+  color: #e0bea2;
+}
 .icon-search:before {
   content: "\e907";
   color: #fff;

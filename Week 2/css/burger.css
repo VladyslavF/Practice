@@ -6,6 +6,13 @@
   align-content: center;
   align-items: center;
 }
+@media (max-width: 700px) {
+  .burger {
+    margin-top: max(23px, 3.4482758621vh);
+    position: fixed;
+    z-index: 21;
+  }
+}
 .burger__lines > * {
   display: block;
   position: absolute;

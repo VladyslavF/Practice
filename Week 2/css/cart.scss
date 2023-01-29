@@ -46,7 +46,7 @@ $adapt-res: 700px;
   margin: calc(100vw * 30 / 1440) 0 0 0;
 
   @media (max-width: $adapt-res) {
-    margin: calc(100vw * 15 / 375) 0 0 0;
+    margin: calc(100vh * 84 / 637) 0 0 0;
   }
 
   &__title {
@@ -174,6 +174,12 @@ $adapt-res: 700px;
     background: #F5F5F5;
     margin-top: calc(100vw * 150 / 1440);
     text-align: center;
+
+    @media (max-width: $adapt-res) {
+      margin-top: calc(100vw * 110 / 375);
+      width: calc(100vw * 50 / 375);
+      z-index: 100;
+    }
     &.opened {
       display: grid;
     }
@@ -197,7 +203,6 @@ $adapt-res: 700px;
 
     }
   }
-
   &__button-minus {
     color: #e0bea2;
     font-size: calc(100vw * 30 / 1440);
@@ -207,11 +212,9 @@ $adapt-res: 700px;
       margin: 0 calc(100vw * 5 / 375);
     }
   }
-
   &__number {
     font-feature-settings: 'pnum' on, 'lnum' on;
   }
-
   &__plus {
     color: #e0bea2;
     font-size: calc(100vw * 30 / 1440);
@@ -235,7 +238,6 @@ $adapt-res: 700px;
 
   &__remove {
       width: calc(100vw * 25 / 1440);
-
 
     @media (max-width: $adapt-res) {
       order: 5;
@@ -274,6 +276,9 @@ $adapt-res: 700px;
   justify-self: center;
   width: 80%;
   border-top: #e0bea2 0.3px solid;
+  @media (max-width: $adapt-res) {
+    font-size: calc(100vw * 12 / 375);
+  }
 }
 .order-title {
   margin: calc(100vw * 70 / 1440) 0 0 0;
@@ -282,7 +287,6 @@ $adapt-res: 700px;
     margin: calc(100vw * 50 / 1440) 0 0 0;
   }
 }
-
 .order-info {
   margin: calc(100vw * 30 / 1440) 0 0 0;
   display: grid;
@@ -294,7 +298,6 @@ $adapt-res: 700px;
     grid-auto-flow: row;
   }
 }
-
 .radio-item {
   display: inline-block;
   position: relative;
@@ -350,6 +353,12 @@ $adapt-res: 700px;
 }
 .order-completion__radio > .radio-item:first-child #self:checked + label:after {
   top: calc(100vw * 13 / 1440);
+  @media (max-width: $adapt-res) {
+    top: calc(100vw * 10 / 375);
+  }
+}
+.order-completion__payment-method>.order-completion__radio>.radio-item:nth-child(2) input[type=radio]:checked + label:after,
+.order-completion__payment-method>.order-completion__radio>.radio-item:nth-child(3) input[type=radio]:checked + label:after {
   @media (max-width: $adapt-res) {
     top: calc(100vw * 10 / 375);
   }
@@ -492,7 +501,6 @@ $adapt-res: 700px;
     }
   }
 }
-
 .order-finalization {
 
   @media (max-width: $adapt-res) {

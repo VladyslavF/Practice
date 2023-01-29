@@ -7,6 +7,11 @@ $adapt-res: 700px;
   align-content: center;
   align-items: center;
 
+  @media (max-width: $adapt-res) {
+    margin-top: max(23px, calc(100vh * 23 / 667));
+    position: fixed;
+    z-index: 21;
+  }
 
   &__lines>* {
     display: block;

@@ -12,7 +12,7 @@ document.querySelectorAll('.order__sizes>.order__dropdown>.sizes__item').forEach
 document.querySelectorAll('.order__sizes').forEach(function (item) {
     item.addEventListener('click', (event) => {
         let elem = event.target;
-        if (elem === document.querySelectorAll('.sizes__item')) {
+        if (elem === document.querySelector('.sizes__item') || elem === document.querySelector('.order__sizes')) {
             return 0;
         }
         let parent = elem.parentNode;

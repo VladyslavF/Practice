@@ -11,7 +11,7 @@ document.querySelector('.burger__lines').addEventListener('click', (event) =>{
     console.log(vw);
     setTimeout((e) => {}, 500);
     if (vw <= 700) {
-        //main_menuElem.classList.toggle('active');
+        main_menuElem.classList.toggle('fill');
         secondary_menuElem.classList.toggle('active');
         mobile_main_menuElem.classList.toggle('active');
     }
@@ -25,31 +25,52 @@ document.querySelector('.lang__title').addEventListener('click', (event) => {
     let elem = event.target;
     let list = document.querySelector('.lang__dropdown');
     let icon = document.querySelector('.lang__title');
+    let span = document.querySelector('.header__lang>span');
     console.log(elem);
     icon.classList.toggle('opened');
     list.classList.toggle('opened');
+    span.classList.toggle('rotated');
 });
-
+document.querySelectorAll('.lang__item').forEach(function (item) {
+    item.addEventListener('click', (event) => {
+        let elem = event.target;
+        let parent = elem.parentNode.parentNode;
+        let span = '<span class="icon-arrow-black"></span>'
+        console.log(elem);
+        let temp = parent.querySelector('.lang__title').innerText;
+        console.log(temp);
+        parent.querySelector('.lang__title').innerText = elem.innerText;
+        elem.innerText = temp;
+    });
+});
 document.querySelector('.currency__title').addEventListener('click', (event) => {
     let elem = event.target;
     let list = document.querySelector('.currency__dropdown');
     let icon = document.querySelector('.currency__title');
+    let span = document.querySelector('.header__currency>span');
     console.log(elem);
     icon.classList.toggle('opened');
     list.classList.toggle('opened');
+    span.classList.toggle('rotated');
+});
+document.querySelectorAll('.currency__item').forEach(function (item) {
+    item.addEventListener('click', (event) => {
+        let elem = event.target;
+        let parent = elem.parentNode.parentNode;
+        console.log(elem);
+        let temp = parent.querySelector('.currency__title').innerText;
+        console.log(temp);
+        parent.querySelector('.currency__title').innerText = elem.innerText;
+        elem.innerText = temp;
+    });
 });
 document.querySelector('.mobile-menu__currency>.currency__title').addEventListener('click', (event) => {
     let elem = event.target;
     let list = document.querySelector('.mobile-menu__currency>.currency__dropdown');
     let icon = document.querySelector('.mobile-menu__currency>.currency__title');
+    let span = document.querySelector('.mobile-menu__currency>span');
     console.log(elem);
     icon.classList.toggle('opened');
     list.classList.toggle('opened');
-});
-
-document.querySelector('.footer__columns').addEventListener('click', (event) => {
-    let elem = event.target;
-    let list =  elem.parentNode.querySelector('.footer__list');
-    console.log(elem);
-    list.classList.toggle('opened');
+    span.classList.toggle('rotated');
 });
