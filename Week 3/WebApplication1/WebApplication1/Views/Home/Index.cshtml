@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout__Main-page.cshtml";
+}
+@{
+<main class="main">
+    <div class="main__gallery">
+        <div class="main__text">
+            <div class="main__name">
+                Новая коллекция
+            </div>
+            <div class="main__link">
+                <a href="">
+                    СМОТРЕТЬ НОВИНКИ
+                    <span class="icon-arrow-right"></span>
+                </a>
+            </div>
+        </div>
+        <div class="main__item">
+            <img src="~/images/img1.png" alt="">
+        </div>
+        <div class="main__item">
+            <img src="~/images/img2.png" alt="">
+        </div>
+        <div class="main__item">
+            <img src="~/images/img3.png" alt="">
+        </div>
+    </div>
+</main>
+<div class="wrapper">
+    <div class="category">
+        <div class="category__title title">
+            Категории
+        </div>
+        <div class="category__gallery">
+            <div class="category__item">
+                <img src="~/images/img4.png" alt="">
+                <a href="">Куртки</a>
+            </div>
+            <div class="category__item">
+                <img src="~/images/img5.png" alt="">
+                <a href="">Пальто</a>
+            </div>
+            <div class="category__item">
+                <img src="~/images/img6.png" alt="">
+                <a href="">Шубы</a>
+            </div>
+            <div class="category__item">
+                <img src="~/images/img7.png" alt="">
+                <a href="">Парки</a>
+            </div>
+            <div class="category__button">
+                <span class="icon-arrow-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contact__title title">
+            Узнайте  первым о новинках
+        </div>
+        <div class="contact__input">
+            <input placeholder="Ваш e-mail*">
+        </div>
+        <div class="contact__button">
+            <p>ПОДПИСАТЬСЯ</p>
+        </div>
+        <div class="contact__policy">
+            Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и
+            ознакомлен(а) с условиями конфиденциальности.
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="~/css/main.css"/>
+<script src="~/js/main.js" defer></script>
+}

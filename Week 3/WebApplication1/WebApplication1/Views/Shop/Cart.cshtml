@@ -1,0 +1,245 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <div class="order">
+        <div class="order__title">
+            Ваш заказ
+        </div>
+        <div class="order__list">
+            <div class="order__item">
+                <img src="~/images/img-cart-1.png" alt="">
+                <div class="order__desc">
+                    <div class="order__item-number">
+                        арт. 1589956
+                    </div>
+                    <div class="order__item-name">
+                        Кремовое пальто
+                    </div>
+                </div>
+                <div class="order__color">
+                    <img src="~/icons/color-beige.svg" alt="">
+                </div>
+                <div class="order__sizes">
+                    <div class="order__size">
+                        L
+                    </div>
+                    <div class="order__dropdown">
+                        <div class="sizes__item">XXS</div>
+                        <div class="sizes__item">XS</div>
+                        <div class="sizes__item">M</div>
+                        <div class="sizes__item">S</div>
+                    </div>
+                    <img src="~/icons/arrow-down-small.svg" alt="">
+                </div>
+                <div class="order__count">
+                    <div class="order__button-minus">
+                        −
+                    </div>
+                    <div class="order__number">
+                        3
+                    </div>
+                    <div class="order__plus">
+                        +
+                    </div>
+                </div>
+                <div class="order__price">
+                    9450 грн
+                </div>
+                <div class="order__remove">
+                    <img src="~/icons/trash.svg" alt="">
+                </div>
+            </div>
+            <div class="order__item">
+                <img src="~/images/img-cart-2.png" alt="">
+                <div class="order__desc">
+                    <div class="order__item-number">
+                        арт. 1588262
+                    </div>
+                    <div class="order__item-name">
+                        Синяя парка
+                    </div>
+                </div>
+                <div class="order__color">
+                    <img src="~/icons/color-navy.svg" alt="">
+                </div>
+                <div class="order__sizes">
+                    <div class="order__size">
+                        M
+                    </div>
+                    <div class="order__dropdown">
+                        <div class="sizes__item">XXS</div>
+                        <div class="sizes__item">XS</div>
+                        <div class="sizes__item">L</div>
+                        <div class="sizes__item">S</div>
+                    </div>
+                    <img src="~/icons/arrow-down-small.svg" alt="">
+                </div>
+                <div class="order__count">
+                    <div class="order__button-minus">
+                        −
+                    </div>
+                    <div class="order__number">
+                        2
+                    </div>
+                    <div class="order__plus">
+                        +
+                    </div>
+                </div>
+                <div class="order__price">
+                    5800 грн
+                </div>
+                <div class="order__remove">
+                    <img src="~/icons/trash.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="order__sum">
+            <div class="order__text">
+                К оплате:
+            </div>
+            <div class="order__sum-number">
+                15250 грн
+            </div>
+        </div>
+    </div>
+    <div class="order-title">
+        Оформление заказа
+    </div>
+    <div class="order-info">
+        <div class="order-completion">
+            <div class="order-completion__personal-data">
+                <div class="order-completion__title">
+                    Персональные данные:
+                </div>
+                <div class="order-completion__fields">
+                    <input type="text" name="personal-data" placeholder="Ваше имя*">
+                    <input type="text" name="personal-data" placeholder="Ваш e-mail*">
+                    <input type="text" name="personal-data" placeholder="Ваша фамилия*">
+                    <input type="text" name="personal-data" placeholder="Ваш телефон*">
+                </div>
+            </div>
+            <div class="order-completion__shipping">
+                <div class="order-completion__title">
+                    Способ доставки:
+                </div>
+                <div class="order-completion__delivery">
+                    <div class="order-completion__Ukraine">
+                        <div class="order-completion__title">
+                            По Украине:
+                        </div>
+                        <div class="order-completion__radio">
+                            <div class="radio-item">
+                                <input type="radio" name="shipping" id="self" value="self">
+                                <label for="self">Самовывоз - вул. Большая Васильковская 14(м. Льва Толстого)</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" name="shipping" id="NovaPoshta" value="NovaPoshta">
+                                <label for="NovaPoshta">Новая Почта</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-completion__foreign">
+                        <div class="order-completion__title">
+                            Международная доставка:
+                        </div>
+                        <div class="order-completion__radio">
+                            <div class="radio-item">
+                                <input type="radio" name="shipping" id="UkrPoshta" value="UkrPoshta">
+                                <label for="UkrPoshta">Украпочта / 1-3 недели / 30$</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" name="shipping" id="DHL" value="DHL">
+                                <label for="DHL">DHL / 3-7 дней / 60$</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-completion__address">
+                <div class="order-completion__title">
+                    Адрес доставки:
+                </div>
+                <div class="order-completion__fields">
+                    <input type="text" name="address" placeholder="Город*">
+                    <input type="text" name="address" placeholder="Отделение почты*">
+                </div>
+            </div>
+            <div class="order-completion__payment">
+                <div class="order-completion__title">
+                    <div>Вы можете оплатить покупку одним из ниже перечисленных способов:</div>
+                </div>
+                <div class="order-completion__payment-method">
+                    <div class="order-completion__radio">
+                        <div class="radio-item">
+                            <input type="radio" id="Privat24" name="payment" value="Privat24">
+                            <label for="Privat24">Полная предоплата через Приват 24 <img src="~/icons/privat24.png"></label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="MoneyTrasfer" name="payment" value="MoneyTrasfer">
+                            <label for="MoneyTrasfer">
+                                Денежным переводом  Visa/MasterCard
+                                <img src="~/icons/visa.png">
+                                <img src="~/icons/master-card.png">
+                            </label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="OnDelivery" name="payment" value="OnDelivery">
+                            <label for="OnDelivery">Наложенным платежом в отделении Новой Почты</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-completion__bonus">
+                <div class="order-completion__title">
+                    Использование бонусного счёта:
+                </div>
+                <input type="text" name="bonus" placeholder="Сумма списания бонусов*">
+            </div>
+        </div>
+        <div class="order-finalization">
+            <div class="order-finalization__links">
+                <a class="order-finalization__link order-finalization__link_active">Войти в личный кабинет</a>
+                <a class="order-finalization__link">УСЛОВИЯ ДОСТАВКИ</a>
+                <a class="order-finalization__link">УСЛОВИЯ ОБМЕНА И ВОЗВРАТА</a>
+                <a class="order-finalization__link">ИНФОРМАЦИЯ ОБ ОПЛАТЕ</a>
+            </div>
+            <div class="order-finalization__summary">
+                <div class="order-finalization__delivery">
+                    <div class="order-finalization__title">
+                        ДОСТАВКА:
+                    </div>
+                    <div class="order-finalization__value">
+                        По тарифам перевозчика
+                    </div>
+                </div>
+                <div class="order-finalization__bonus">
+                    <div class="order-finalization__title">
+                        БОНУСЫ:
+                    </div>
+                    <div class="order-finalization__value">
+                        -69 грн
+                    </div>
+                </div>
+                <div class="order-finalization__sum">
+                    <div class="order-finalization__title">
+                        ИТОГО:
+                    </div>
+                    <div class="order-finalization__value">
+                        15250 грн
+                    </div>
+                </div>
+            </div>
+            <div class="order-finalization__button">
+                ОФОРМИТЬ ЗАКАЗ
+            </div>
+            <div class="order-finalization__policy">
+                Нажимая на кнопку «оплатить заказ», я принимаю условия
+                <a href="">публичной оферты</a> и
+                <a href="">политики конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="~/css/cart.css"/>
+    <script src="~/js/cart.js" defer></script>
+}

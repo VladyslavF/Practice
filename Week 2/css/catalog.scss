@@ -18,7 +18,7 @@ $adapt-res: 700px;
   grid-template-columns: calc(100vw * (300 / 1440) / 2) 1fr;
 
   @media (max-width: $adapt-res) {
-    //margin: 0;
+    margin: calc(100vh * 34 / 637) 0 0 0;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
   }

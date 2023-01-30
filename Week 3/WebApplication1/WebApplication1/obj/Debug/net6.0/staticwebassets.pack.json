@@ -1,0 +1,649 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\breadcrumbs.css",
+      "PackagePath": "staticwebassets\\css\\breadcrumbs.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\breadcrumbs.css.map",
+      "PackagePath": "staticwebassets\\css\\breadcrumbs.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\breadcrumbs.scss",
+      "PackagePath": "staticwebassets\\css\\breadcrumbs.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\burger.css",
+      "PackagePath": "staticwebassets\\css\\burger.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\burger.css.map",
+      "PackagePath": "staticwebassets\\css\\burger.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\burger.scss",
+      "PackagePath": "staticwebassets\\css\\burger.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\cart.css.map",
+      "PackagePath": "staticwebassets\\css\\cart.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\cart.scss",
+      "PackagePath": "staticwebassets\\css\\cart.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\catalog.css",
+      "PackagePath": "staticwebassets\\css\\catalog.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\catalog.css.map",
+      "PackagePath": "staticwebassets\\css\\catalog.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\catalog.scss",
+      "PackagePath": "staticwebassets\\css\\catalog.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\footer.css.map",
+      "PackagePath": "staticwebassets\\css\\footer.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\footer.scss",
+      "PackagePath": "staticwebassets\\css\\footer.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\header.css",
+      "PackagePath": "staticwebassets\\css\\header.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\header.css.map",
+      "PackagePath": "staticwebassets\\css\\header.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\header.scss",
+      "PackagePath": "staticwebassets\\css\\header.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\icons.css",
+      "PackagePath": "staticwebassets\\css\\icons.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\item.css",
+      "PackagePath": "staticwebassets\\css\\item.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\item.css.map",
+      "PackagePath": "staticwebassets\\css\\item.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\item.scss",
+      "PackagePath": "staticwebassets\\css\\item.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\main.css.map",
+      "PackagePath": "staticwebassets\\css\\main.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\main.scss",
+      "PackagePath": "staticwebassets\\css\\main.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\null.css",
+      "PackagePath": "staticwebassets\\css\\null.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\theme.css",
+      "PackagePath": "staticwebassets\\css\\theme.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\theme.css.map",
+      "PackagePath": "staticwebassets\\css\\theme.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\theme.scss",
+      "PackagePath": "staticwebassets\\css\\theme.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\wrapper.css",
+      "PackagePath": "staticwebassets\\css\\wrapper.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\wrapper.css.map",
+      "PackagePath": "staticwebassets\\css\\wrapper.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\wrapper.scss",
+      "PackagePath": "staticwebassets\\css\\wrapper.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\arrow-black.svg",
+      "PackagePath": "staticwebassets\\icons\\arrow-black.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\arrow-down-small.svg",
+      "PackagePath": "staticwebassets\\icons\\arrow-down-small.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\arrow-down.svg",
+      "PackagePath": "staticwebassets\\icons\\arrow-down.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\arrow-right.svg",
+      "PackagePath": "staticwebassets\\icons\\arrow-right.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\burger-new.svg",
+      "PackagePath": "staticwebassets\\icons\\burger-new.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\burger.svg",
+      "PackagePath": "staticwebassets\\icons\\burger.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\cart-new.svg",
+      "PackagePath": "staticwebassets\\icons\\cart-new.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\cart.svg",
+      "PackagePath": "staticwebassets\\icons\\cart.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\color-beige.svg",
+      "PackagePath": "staticwebassets\\icons\\color-beige.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\color-navy.svg",
+      "PackagePath": "staticwebassets\\icons\\color-navy.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\color-white.svg",
+      "PackagePath": "staticwebassets\\icons\\color-white.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\favourites-new.svg",
+      "PackagePath": "staticwebassets\\icons\\favourites-new.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\favourites.svg",
+      "PackagePath": "staticwebassets\\icons\\favourites.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\filter.svg",
+      "PackagePath": "staticwebassets\\icons\\filter.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\ig.svg",
+      "PackagePath": "staticwebassets\\icons\\ig.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\logo-new.svg",
+      "PackagePath": "staticwebassets\\icons\\logo-new.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\logo.svg",
+      "PackagePath": "staticwebassets\\icons\\logo.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\master-card.png",
+      "PackagePath": "staticwebassets\\icons\\master-card.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\privat24.png",
+      "PackagePath": "staticwebassets\\icons\\privat24.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\profile-new.svg",
+      "PackagePath": "staticwebassets\\icons\\profile-new.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\profile.svg",
+      "PackagePath": "staticwebassets\\icons\\profile.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\search-black.svg",
+      "PackagePath": "staticwebassets\\icons\\search-black.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\search.svg",
+      "PackagePath": "staticwebassets\\icons\\search.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\tg.svg",
+      "PackagePath": "staticwebassets\\icons\\tg.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\trash.svg",
+      "PackagePath": "staticwebassets\\icons\\trash.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\visa.png",
+      "PackagePath": "staticwebassets\\icons\\visa.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\icons\\white-cross.svg",
+      "PackagePath": "staticwebassets\\icons\\white-cross.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-c-1.png",
+      "PackagePath": "staticwebassets\\images\\img-c-1.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-c-2.png",
+      "PackagePath": "staticwebassets\\images\\img-c-2.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-c-3.png",
+      "PackagePath": "staticwebassets\\images\\img-c-3.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-c-4.png",
+      "PackagePath": "staticwebassets\\images\\img-c-4.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-cart-1.png",
+      "PackagePath": "staticwebassets\\images\\img-cart-1.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-cart-2.png",
+      "PackagePath": "staticwebassets\\images\\img-cart-2.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-1.png",
+      "PackagePath": "staticwebassets\\images\\img-i-1.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-10.png",
+      "PackagePath": "staticwebassets\\images\\img-i-10.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-11.png",
+      "PackagePath": "staticwebassets\\images\\img-i-11.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-12.png",
+      "PackagePath": "staticwebassets\\images\\img-i-12.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-13.png",
+      "PackagePath": "staticwebassets\\images\\img-i-13.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-14.png",
+      "PackagePath": "staticwebassets\\images\\img-i-14.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-2.png",
+      "PackagePath": "staticwebassets\\images\\img-i-2.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-3.png",
+      "PackagePath": "staticwebassets\\images\\img-i-3.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-4.png",
+      "PackagePath": "staticwebassets\\images\\img-i-4.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-5.png",
+      "PackagePath": "staticwebassets\\images\\img-i-5.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-6.png",
+      "PackagePath": "staticwebassets\\images\\img-i-6.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-7.png",
+      "PackagePath": "staticwebassets\\images\\img-i-7.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-8.png",
+      "PackagePath": "staticwebassets\\images\\img-i-8.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img-i-9.png",
+      "PackagePath": "staticwebassets\\images\\img-i-9.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img1.png",
+      "PackagePath": "staticwebassets\\images\\img1.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img2.png",
+      "PackagePath": "staticwebassets\\images\\img2.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img3.png",
+      "PackagePath": "staticwebassets\\images\\img3.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img4.png",
+      "PackagePath": "staticwebassets\\images\\img4.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img5.png",
+      "PackagePath": "staticwebassets\\images\\img5.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img6.png",
+      "PackagePath": "staticwebassets\\images\\img6.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\images\\img7.png",
+      "PackagePath": "staticwebassets\\images\\img7.png"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\js\\cart.js",
+      "PackagePath": "staticwebassets\\js\\cart.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\js\\catalog.js",
+      "PackagePath": "staticwebassets\\js\\catalog.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\js\\footer.js",
+      "PackagePath": "staticwebassets\\js\\footer.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\js\\header.js",
+      "PackagePath": "staticwebassets\\js\\header.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\js\\item.js",
+      "PackagePath": "staticwebassets\\js\\item.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WebApplication1.props",
+      "PackagePath": "build\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication1.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WebApplication1.props",
+      "PackagePath": "buildTransitive\\WebApplication1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
