@@ -725,6 +725,9 @@ $adapt-res: 700px;
   &__item {
     width: calc(100vw * 370 / 1440);
     @extend %item;
+    img {
+      width: 100%;
+    }
     @media (max-width: $adapt-res) {
       width: calc(100vw * 165 / 375);
     }

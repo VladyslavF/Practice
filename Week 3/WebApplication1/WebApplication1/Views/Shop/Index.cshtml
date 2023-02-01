@@ -1,6 +1,8 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@using WebApplication1.Models.Shop
+@model ShopFull
 @{
     <div class="main">
         <div class="main__filter-title">
@@ -69,6 +71,40 @@
             </div>
         </div>
         <main class="main__gallery">
+
+        @foreach (var item in Model.products)
+            {
+                <div class="main__item">
+                    <div class="main__fav-button">
+                        <span class="icon-favourites"></span>
+                    </div>
+                    <img src="~/images/@(item.ImageUrl)" alt="">
+                    <div class="main__name @("main__name_" + item.Status)">
+                        @item.Name
+                    </div>
+                    <div class="main__price">
+                        @item.Price грн
+                    </div>
+                    <div class="main__sizes">
+                    @foreach (var size in Model.sizes)
+                        {
+                            <div class="main__size">
+                                @size.Name
+                            </div>
+                        }
+                    </div>
+                    <div class="main__colors">
+                    @foreach (var color in Model.colors)
+                        {
+                            <div class="main__color">
+                                <img src="~/icons/color-@(color.Name + ".svg")" alt="">
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            }
+            <!--
             <div class="main__item">
                 <div class="main__fav-button">
                     <span class="icon-favourites"></span>
@@ -513,6 +549,7 @@
                     </div>
                 </div>
             </div>
+            -->
         </main>
         <aside class="main__sidebar">
             <div class="main__title">
@@ -521,6 +558,11 @@
             <div class="main__links">
                 <a href="">New</a>
                 <a href="">Bestsellers</a>
+                @foreach (var category in Model.categories)
+                {
+                    <a href="">@category.Name</a>
+                }
+                <!--
                 <a href="">Верхняя одежда</a>
                 <a href="">Шубы</a>
                 <a href="">Тренчи</a>
@@ -533,6 +575,7 @@
                 <a href="">Юбки</a>
                 <a href="">Футболки и топы</a>
                 <a href="">Аксессуары</a>
+                -->
                 <a href="">Sale</a>
                 <a href="">Summer</a>
                 <a href="">Посмотреть всё</a>
