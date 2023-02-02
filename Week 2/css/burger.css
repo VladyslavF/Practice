@@ -8,7 +8,7 @@
 }
 @media (max-width: 700px) {
   .burger {
-    margin-top: max(23px, 3.4482758621vh);
+    margin-top: max(23px, 3.748125937vh);
     position: fixed;
     z-index: 21;
   }

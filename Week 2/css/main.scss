@@ -15,7 +15,7 @@ $adapt-res: 700px;
     background-color: #F5F5F5;
   }
   @media (max-width: $adapt-res) {
-    margin-top: max(23px, calc(100vh * 15 / 667));
+    margin-top: max(23px, calc(100vh * 25 / 667));
   }
 }
 .header {

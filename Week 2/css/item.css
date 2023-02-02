@@ -619,6 +619,9 @@
 .you-recently-viewed__item {
   width: 25.6944444444vw;
 }
+.you-recently-viewed__item img {
+  width: 100%;
+}
 @media (max-width: 700px) {
   .you-recently-viewed__item {
     width: 44vw;

@@ -43,10 +43,11 @@ $adapt-res: 700px;
 }
 
 .order {
+  overflow-x: hidden;
   margin: calc(100vw * 30 / 1440) 0 0 0;
 
   @media (max-width: $adapt-res) {
-    margin: calc(100vh * 84 / 637) 0 0 0;
+    margin: calc(100vh * 10 / 637) 0 0 0;
   }
 
   &__title {

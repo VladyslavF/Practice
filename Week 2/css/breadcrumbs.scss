@@ -8,7 +8,7 @@ $adapt-res: 700px;
 
   @media (max-width: $adapt-res) {
     grid-column-gap: calc(100vw * 9 / 375);
-    margin: calc(100vw * 15 / 375) 0 0 0;
+    margin: calc(100vw * 65 / 375) 0 0 0;
   }
 
   &__link {

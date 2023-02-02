@@ -47,11 +47,12 @@
 }
 
 .order {
+  overflow-x: hidden;
   margin: 2.0833333333vw 0 0 0;
 }
 @media (max-width: 700px) {
   .order {
-    margin: 13.1868131868vh 0 0 0;
+    margin: 1.5698587127vh 0 0 0;
   }
 }
 .order__list {
