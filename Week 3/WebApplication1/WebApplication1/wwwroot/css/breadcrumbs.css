@@ -16,6 +16,8 @@
   line-height: max(10px, 1.3194444444vw);
   font-style: normal;
   font-weight: 300;
+  text-decoration: none;
+  color: #252525;
 }
 @media (max-width: 700px) {
   .breadcrumbs__link {

@@ -8,8 +8,6 @@ document.querySelector('.burger__lines').addEventListener('click', (event) =>{
     let secondary_menuElem = document.querySelector('.header__submenu');
     let mobile_main_menuElem = document.querySelector('.mobile-menu');
     let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-    console.log(vw);
-    setTimeout((e) => {}, 500);
     if (vw <= 700) {
         //main_menuElem.classList.toggle('active');
         secondary_menuElem.classList.toggle('active');

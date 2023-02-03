@@ -126,7 +126,7 @@ $adapt-res: 700px;
   &__currency {
     font-size: calc(100vw * 0.0125);
     &>span {
-      //align-self: center;
+      align-self: center;
       margin-left: calc(100vw * 42 / 1440);
     }
     @media (max-width: $adapt-res) {
@@ -139,6 +139,14 @@ $adapt-res: 700px;
     flex-wrap: wrap;
     grid-template-columns: repeat(4, 1fr);
     justify-self: end;
+    a {
+      margin: 0;
+      padding: 0;
+      width: calc(100vw * (25 / 1440));
+      @media (max-width: $adapt-res) {
+        width: calc(100vw * (20 / 375));
+      }
+    }
     @media (max-width: $adapt-res) {
       img:first-child {
         display: none;
@@ -254,6 +262,7 @@ $adapt-res: 700px;
       align-self: center;
       @media (max-width: $adapt-res) {
         font-size: calc(100vw * 7 / 375);
+        line-height: calc(100vw * 7 / 375);
       }
     }
   }
@@ -356,8 +365,9 @@ $adapt-res: 700px;
     span {
       font-size: (100vw * 10 / 1440);
       display: block;
-      margin-top: calc(100vh * -9 / 667);
+      margin-top: calc(100vh * -8 / 667);
       margin-left: calc(100vw * 38 / 375);
+      align-self: center;
       @media (max-width: $adapt-res) {
         font-size: (100vw * 6 / 375);
       }

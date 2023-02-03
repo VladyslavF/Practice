@@ -16,6 +16,8 @@ $adapt-res: 700px;
     line-height: max(10px, calc(100vw * 19 / 1440));
     font-style: normal;
     font-weight: 300;
+    text-decoration: none;
+    color: #252525;
     @media (max-width: $adapt-res) {
       font-size: calc(100vw * 16 / 375);
       line-height: calc(100vw * 19 / 375);

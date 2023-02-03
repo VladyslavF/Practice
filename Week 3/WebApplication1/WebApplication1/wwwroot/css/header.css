@@ -112,6 +112,7 @@
   font-size: 1.25vw;
 }
 .header__currency > span {
+  align-self: center;
   margin-left: 2.9166666667vw;
 }
 @media (max-width: 700px) {
@@ -124,6 +125,16 @@
   flex-wrap: wrap;
   grid-template-columns: repeat(4, 1fr);
   justify-self: end;
+}
+.header__icons a {
+  margin: 0;
+  padding: 0;
+  width: 1.7361111111vw;
+}
+@media (max-width: 700px) {
+  .header__icons a {
+    width: 5.3333333333vw;
+  }
 }
 @media (max-width: 700px) {
   .header__icons {
@@ -229,6 +240,7 @@
 @media (max-width: 700px) {
   .currency__title span {
     font-size: 1.8666666667vw;
+    line-height: 1.8666666667vw;
   }
 }
 .currency__dropdown {
@@ -318,8 +330,9 @@
 .mobile-menu__currency span {
   font-size: 0.6944444444vw;
   display: block;
-  margin-top: -1.3493253373vh;
+  margin-top: -1.1994002999vh;
   margin-left: 10.1333333333vw;
+  align-self: center;
 }
 @media (max-width: 700px) {
   .mobile-menu__currency span {
