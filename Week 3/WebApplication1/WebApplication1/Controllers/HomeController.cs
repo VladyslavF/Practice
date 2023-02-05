@@ -1,21 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using WebApplication1.Data;
 using WebApplication1.Models;
+using WebApplication1.Models.Shop;
 
 namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        protected ShopDbContext shopDbContext;
+        public HomeController(ShopDbContext shopDbContext)
         {
-            _logger = logger;
+            this.shopDbContext = shopDbContext;
         }
-
         public IActionResult Index()
         {
-            return View();
+            var model = new ShopFull();
+            model.MenuItems = shopDbContext.MenuItems.ToList();
+            model.MenuLinks = shopDbContext.Links.ToList();
+            return View(model);
         }
 
         public IActionResult Privacy()

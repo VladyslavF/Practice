@@ -22,7 +22,7 @@ namespace WebApplication1.Controllers
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            var shopDbContext = _context.Products.Include(p => p.Category).Include(p => p.Color).Include(p => p.Size);
+            var shopDbContext = _context.Products.Include(p => p.Category).Include(p => p.Color);
             return View(await shopDbContext.ToListAsync());
         }
 
@@ -37,7 +37,6 @@ namespace WebApplication1.Controllers
             var product = await _context.Products
                 .Include(p => p.Category)
                 .Include(p => p.Color)
-                .Include(p => p.Size)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (product == null)
             {
@@ -52,7 +51,6 @@ namespace WebApplication1.Controllers
         {
             ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id");
             ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Id");
-            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Id");
             return View();
         }
 
@@ -61,7 +59,7 @@ namespace WebApplication1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Price,ImageUrl,SizeId,CategoryId,ColorId,Description,Ingredients,Status")] Product product)
+        public async Task<IActionResult> Create([Bind("Id,Name,Price,CategoryId,ImageUrl,ColorId,Description,Ingredients,Status")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -71,7 +69,6 @@ namespace WebApplication1.Controllers
             }
             ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id", product.CategoryId);
             ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Id", product.ColorId);
-            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Id", product.SizeId);
             return View(product);
         }
 
@@ -90,7 +87,6 @@ namespace WebApplication1.Controllers
             }
             ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id", product.CategoryId);
             ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Id", product.ColorId);
-            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Id", product.SizeId);
             return View(product);
         }
 
@@ -99,7 +95,7 @@ namespace WebApplication1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,ImageUrl,SizeId,CategoryId,ColorId,Description,Ingredients,Status")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,CategoryId,ImageUrl,ColorId,Description,Ingredients,Status")] Product product)
         {
             if (id != product.Id)
             {
@@ -128,7 +124,6 @@ namespace WebApplication1.Controllers
             }
             ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id", product.CategoryId);
             ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Id", product.ColorId);
-            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Id", product.SizeId);
             return View(product);
         }
 
@@ -143,7 +138,6 @@ namespace WebApplication1.Controllers
             var product = await _context.Products
                 .Include(p => p.Category)
                 .Include(p => p.Color)
-                .Include(p => p.Size)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (product == null)
             {

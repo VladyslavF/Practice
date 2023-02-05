@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using WebApplication1.Models.Shop
+@model ShopFull
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -147,7 +149,68 @@
         </div>
         @RenderBody()
         <footer class="footer">
+
             <div class="footer__columns">
+
+                @foreach (var item in Model.MenuItems)
+                {
+                    <div class="footer__column">
+  
+                        <div class="footer__title">
+                                @item.Name.ToUpper()
+                                @if (item.Name.ToUpper() != "КОНТАКТЫ")
+                                {
+                                    <span class="icon-arrow-down-small"></span>
+                                }                             
+                            </div>
+                        @if (item.Name.ToUpper() == "КОНТАКТЫ")
+                        {
+                            <ul class="footer__list opened">
+                                @foreach (var link in Model.MenuLinks)
+                                {
+                                if (item.Id == link.ItemId)
+                                {
+                                    if (link.Name == "ICONS")
+                                    {
+                                        <li>
+                                            <a href="" class="icon-ig"></a>
+                                            <a href="" class="icon-tg"></a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li><a href="@link.Url">@link.Name</a></li>
+                                    }
+                                    
+                                }
+                            }
+                            </ul>
+                        }
+                        else {
+                            <ul class="footer__list">
+                                @foreach (var link in Model.MenuLinks)
+                                {
+                                    if (item.Id == link.ItemId)
+                                    {
+                                        if (link.Name == "ICONS")
+                                        {
+                                            <li>
+                                                <a href="" class="icon-ig"></a>
+                                                <a href="" class="icon-tg"></a>
+                                            </li>
+                                        }
+                                        else
+                                        {
+                                            <li><a href="@link.Url">@link.Name</a></li>
+                                        }
+
+                                    }
+                                }
+                            </ul>
+                        }
+                    </div>
+                }
+                <!--
                 <div class="footer__column">
                     <div class="footer__title">
                         КОМПАНИЯ <span class="icon-arrow-down-small"></span>
@@ -182,7 +245,7 @@
                         КОНТАКТЫ
                     </div>
                     <ul class="footer__list opened">
-                        <li id="wtf">
+                        <li>
                             <a href="" class="icon-ig"></a>
                             <a href="" class="icon-tg"></a>
                         </li>
@@ -190,6 +253,7 @@
                         <li>info@yanki.com</li>
                     </ul>
                 </div>
+                -->
             </div>
             <div class="footer__copyright">
                 ©️ 2021 Yanki. All rights reserved

@@ -4,6 +4,7 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Links { get; set; }
+        public ICollection<Links> Links { get; set; }
+
     }
 }

@@ -12,6 +12,9 @@ namespace WebApplication1.Data
         public DbSet<Color> Colors { get; set; }
         public DbSet<Size> Sizes { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Product_Sizes> Product_Sizes { get; set; }
+        public DbSet<Models.Menu.Item> MenuItems { get; set; }
+        public DbSet<Links> Links { get; set; }
         public ShopDbContext(DbContextOptions options) : base(options)
         {
         }

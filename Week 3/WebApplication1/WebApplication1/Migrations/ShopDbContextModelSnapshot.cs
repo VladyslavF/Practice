@@ -29,10 +29,6 @@ namespace WebApplication1.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Link")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -40,6 +36,32 @@ namespace WebApplication1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Menu");
+                });
+
+            modelBuilder.Entity("WebApplication1.Models.Menu.Links", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ItemId");
+
+                    b.ToTable("Links");
                 });
 
             modelBuilder.Entity("WebApplication1.Models.Shop.Category", b =>
@@ -115,9 +137,6 @@ namespace WebApplication1.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
-                    b.Property<int>("SizeId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Status")
                         .HasColumnType("nvarchar(max)");
 
@@ -127,9 +146,30 @@ namespace WebApplication1.Migrations
 
                     b.HasIndex("ColorId");
 
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("WebApplication1.Models.Shop.Product_Sizes", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SizeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
                     b.HasIndex("SizeId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Product_Sizes");
                 });
 
             modelBuilder.Entity("WebApplication1.Models.Shop.Size", b =>
@@ -177,6 +217,17 @@ namespace WebApplication1.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("WebApplication1.Models.Menu.Links", b =>
+                {
+                    b.HasOne("WebApplication1.Models.Menu.Item", "Item")
+                        .WithMany("Links")
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Item");
+                });
+
             modelBuilder.Entity("WebApplication1.Models.Shop.Product", b =>
                 {
                     b.HasOne("WebApplication1.Models.Shop.Category", "Category")
@@ -191,17 +242,33 @@ namespace WebApplication1.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Category");
+
+                    b.Navigation("Color");
+                });
+
+            modelBuilder.Entity("WebApplication1.Models.Shop.Product_Sizes", b =>
+                {
+                    b.HasOne("WebApplication1.Models.Shop.Product", "Product")
+                        .WithMany("Sizes")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("WebApplication1.Models.Shop.Size", "Size")
-                        .WithMany("Products")
+                        .WithMany("Product_Sizes")
                         .HasForeignKey("SizeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Category");
-
-                    b.Navigation("Color");
+                    b.Navigation("Product");
 
                     b.Navigation("Size");
+                });
+
+            modelBuilder.Entity("WebApplication1.Models.Menu.Item", b =>
+                {
+                    b.Navigation("Links");
                 });
 
             modelBuilder.Entity("WebApplication1.Models.Shop.Category", b =>
@@ -214,9 +281,14 @@ namespace WebApplication1.Migrations
                     b.Navigation("Products");
                 });
 
+            modelBuilder.Entity("WebApplication1.Models.Shop.Product", b =>
+                {
+                    b.Navigation("Sizes");
+                });
+
             modelBuilder.Entity("WebApplication1.Models.Shop.Size", b =>
                 {
-                    b.Navigation("Products");
+                    b.Navigation("Product_Sizes");
                 });
 #pragma warning restore 612, 618
         }

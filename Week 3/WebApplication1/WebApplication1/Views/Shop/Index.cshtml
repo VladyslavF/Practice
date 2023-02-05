@@ -89,11 +89,22 @@
                         @item.Price грн
                     </div>
                     <div class="main__sizes">
-                    @foreach (var size in Model.sizes)
+ 
+                    @foreach (var size in Model.Product_sizes)
                         {
-                            <div class="main__size">
-                                @size.Name
-                            </div>
+                            if (size.ProductId == item.Id)
+                            {
+                                @foreach (var main_size in Model.sizes)
+                                {
+                                    if (main_size.Id == size.SizeId)
+                                    {
+                                      <div class="main__size">
+                                            @main_size.Name
+                                      </div>
+                                    }
+                                }
+
+                            }
                         }
                     </div>
                     <div class="main__colors">

@@ -19,6 +19,9 @@ namespace WebApplication1.Controllers
             model.products = shopDbContext.Products.ToList();
             model.sizes = shopDbContext.Sizes.ToList();
             model.colors = shopDbContext.Colors.ToList();
+            model.Product_sizes = shopDbContext.Product_Sizes.ToList();
+            model.MenuItems = shopDbContext.MenuItems.ToList();
+            model.MenuLinks = shopDbContext.Links.ToList();
             return View(model);
         }
         public IActionResult Item()

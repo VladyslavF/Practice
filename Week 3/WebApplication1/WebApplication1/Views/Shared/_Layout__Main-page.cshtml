@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using WebApplication1.Models.Shop
+@model ShopFull
+<!DOCTYPE html>
 <html lang="en">
 <head>
         <meta charset="utf-8" />
@@ -130,50 +132,112 @@
     @RenderBody();
     <div class="wrapper">
             <footer class="footer">
-                <div class="footer__columns">
+            <div class="footer__columns">
+
+                @foreach (var item in Model.MenuItems)
+                {
                     <div class="footer__column">
+
                         <div class="footer__title">
-                            КОМПАНИЯ <span class="icon-arrow-down-small"></span>
+                            @item.Name.ToUpper()
+                            @if (item.Name.ToUpper() != "КОНТАКТЫ")
+                            {
+                                <span class="icon-arrow-down-small"></span>
+                            }
                         </div>
-                        <ul class="footer__list">
-                            <li><a href="">О нас</a></li>
-                            <li><a href="">Контакты</a></li>
-                        </ul>
+                        @if (item.Name.ToUpper() == "КОНТАКТЫ")
+                        {
+                            <ul class="footer__list opened">
+                                @foreach (var link in Model.MenuLinks)
+                                {
+                                    if (item.Id == link.ItemId)
+                                    {
+                                        if (link.Name == "ICONS")
+                                        {
+                                            <li>
+                                                <a href="" class="icon-ig"></a>
+                                                <a href="" class="icon-tg"></a>
+                                            </li>
+                                        }
+                                        else
+                                        {
+                                            <li><a href="@link.Url">@link.Name</a></li>
+                                        }
+
+                                    }
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <ul class="footer__list">
+                                @foreach (var link in Model.MenuLinks)
+                                {
+                                    if (item.Id == link.ItemId)
+                                    {
+                                        if (link.Name == "ICONS")
+                                        {
+                                            <li>
+                                                <a href="" class="icon-ig"></a>
+                                                <a href="" class="icon-tg"></a>
+                                            </li>
+                                        }
+                                        else
+                                        {
+                                            <li><a href="@link.Url">@link.Name</a></li>
+                                        }
+
+                                    }
+                                }
+                            </ul>
+                        }
                     </div>
-                    <div class="footer__column">
-                        <div class="footer__title" id="useful">
-                            ПОЛЕЗНОЕ <span class="icon-arrow-down-small"></span>
-                        </div>
-                        <ul class="footer__list">
-                            <li><a href="">Оплата и доставка</a></li>
-                            <li><a href="">Условия возврата</a></li>
-                            <li><a href="">Бонусная система</a></li>
-                        </ul>
+                }
+                <!--
+                <div class="footer__column">
+                    <div class="footer__title">
+                        КОМПАНИЯ <span class="icon-arrow-down-small"></span>
                     </div>
-                    <div class="footer__column">
-                        <div class="footer__title" id="to-buyer">
-                            ПОКУПАТЕЛЮ <span class="icon-arrow-down-small"></span>
-                        </div>
-                        <ul class="footer__list">
-                            <li><a href="">Избранное</a></li>
-                            <li><a href="">Публичная оферта</a></li>
-                            <li><a href="">Политика конфиденциальности</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__column">
-                        <div class="footer__title">
-                            КОНТАКТЫ
-                        </div>
-                        <ul class="footer__list opened">
-                            <li id="wtf">
-                                <a href="" class="icon-ig"></a>
-                                <a href="" class="icon-tg"></a>
-                            </li>
-                            <li>+38(073) 096 36 44</li>
-                            <li>info@yanki.com</li>
-                        </ul>
-                    </div>
+                    <ul class="footer__list">
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
                 </div>
+                <div class="footer__column">
+                    <div class="footer__title" id="useful">
+                        ПОЛЕЗНОЕ <span class="icon-arrow-down-small"></span>
+                    </div>
+                    <ul class="footer__list">
+                        <li><a href="">Оплата и доставка</a></li>
+                        <li><a href="">Условия возврата</a></li>
+                        <li><a href="">Бонусная система</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__title" id="to-buyer">
+                        ПОКУПАТЕЛЮ <span class="icon-arrow-down-small"></span>
+                    </div>
+                    <ul class="footer__list">
+                        <li><a href="">Избранное</a></li>
+                        <li><a href="">Публичная оферта</a></li>
+                        <li><a href="">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__title">
+                        КОНТАКТЫ
+                    </div>
+                    <ul class="footer__list opened">
+                        <li>
+                            <a href="" class="icon-ig"></a>
+                            <a href="" class="icon-tg"></a>
+                        </li>
+                        <li>+38(073) 096 36 44</li>
+                        <li>info@yanki.com</li>
+                    </ul>
+                </div>
+                -->
+            </div>
                 <div class="footer__copyright">
                     ©️ 2021 Yanki. All rights reserved
                 </div>

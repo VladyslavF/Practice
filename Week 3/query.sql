@@ -37,7 +37,116 @@ select * from Categories
 select * from Sizes
 select * from Colors
 select * from Products
+select * from Product_Sizes
 
+insert into Products values (N'Белая куртка', 2900, 'img-c-1.png', 1, 3, 'Lorem Ipsum', 'Lorem Ipsum', 'new')
+insert into Product_Sizes values (1, 1)
+insert into Product_Sizes values (1, 2)
+insert into Product_Sizes values (1, 3)
+insert into Product_Sizes values (1, 4)
+insert into Product_Sizes values (1, 5)
+
+insert into Products values (N'Синее пальто', 3150, 'img-c-2.png', 4, 2, 'Lorem Ipsum', 'Lorem Ipsum', null)
+insert into Product_Sizes values (2, 2)
+insert into Product_Sizes values (2, 4)
+insert into Product_Sizes values (2, 5)
+
+insert into Products values (N'Бежевая шуба', 4200, 'img-c-3.png', 2, 1, 'Lorem Ipsum', 'Lorem Ipsum', null)
+insert into Product_Sizes values (3, 2)
+insert into Product_Sizes values (3, 3)
+insert into Product_Sizes values (3, 5)
+
+insert into Products values (N'Синяя парка', 2900, 'img-c-4.png', 1, 2, 'Lorem Ipsum', 'Lorem Ipsum', 'new')
+insert into Product_Sizes values (4, 1)
+insert into Product_Sizes values (4, 2)
+insert into Product_Sizes values (4, 3)
+insert into Product_Sizes values (4, 4)
+insert into Product_Sizes values (4, 5)
+
+insert into Products values (N'Белая куртка', 2900, 'img-c-1.png', 1, 3, 'Lorem Ipsum', 'Lorem Ipsum', 'new')
+insert into Product_Sizes values (5, 1)
+insert into Product_Sizes values (5, 2)
+insert into Product_Sizes values (5, 3)
+insert into Product_Sizes values (5, 4)
+insert into Product_Sizes values (5, 5)
+
+insert into Products values (N'Синее пальто', 3150, 'img-c-2.png', 4, 2, 'Lorem Ipsum', 'Lorem Ipsum', null)
+insert into Product_Sizes values (6, 2)
+insert into Product_Sizes values (6, 4)
+insert into Product_Sizes values (6, 5)
+
+insert into Products values (N'Белая куртка', 2900, 'img-c-1.png', 1, 3, 'Lorem Ipsum', 'Lorem Ipsum', 'new')
+insert into Product_Sizes values (7, 1)
+insert into Product_Sizes values (7, 2)
+insert into Product_Sizes values (7, 3)
+insert into Product_Sizes values (7, 4)
+insert into Product_Sizes values (7, 5)
+
+insert into Products values (N'Синее пальто', 3150, 'img-c-2.png', 4, 2, 'Lorem Ipsum', 'Lorem Ipsum', null)
+insert into Product_Sizes values (8, 2)
+insert into Product_Sizes values (8, 4)
+insert into Product_Sizes values (8, 5)
+
+insert into Products values (N'Бежевая шуба', 4200, 'img-c-3.png', 2, 1, 'Lorem Ipsum', 'Lorem Ipsum', null)
+insert into Product_Sizes values (9, 2)
+insert into Product_Sizes values (9, 3)
+insert into Product_Sizes values (9, 5)
+
+insert into Products values (N'Синяя парка', 2900, 'img-c-4.png', 1, 2, 'Lorem Ipsum', 'Lorem Ipsum', 'new')
+insert into Product_Sizes values (10, 1)
+insert into Product_Sizes values (10, 2)
+insert into Product_Sizes values (10, 3)
+insert into Product_Sizes values (10, 4)
+insert into Product_Sizes values (10, 5)
+
+insert into Products values (N'Белая куртка', 2900, 'img-c-1.png', 1, 3, 'Lorem Ipsum', 'Lorem Ipsum', 'new')
+insert into Product_Sizes values (11, 1)
+insert into Product_Sizes values (11, 2)
+insert into Product_Sizes values (11, 3)
+insert into Product_Sizes values (11, 4)
+insert into Product_Sizes values (11, 5)
+
+insert into Products values (N'Синее пальто', 3150, 'img-c-2.png', 4, 2, 'Lorem Ipsum', 'Lorem Ipsum', null)
+insert into Product_Sizes values (12, 2)
+insert into Product_Sizes values (12, 4)
+insert into Product_Sizes values (12, 5)
+
+
+insert into Menu values (N'Компания')
+insert into Menu values (N'Полезное')
+insert into Menu values (N'Покупателю')
+insert into Menu values (N'Контакты')
+
+select * from Item
+select * from Links
+
+insert into Links values (1, N'О нас', 'URL')
+insert into Links values (1, N'Контакты', 'URL')
+
+insert into Links values (2, N'Оплата и доставка', 'URL')
+insert into Links values (2, N'Условия возврата', 'URL')
+insert into Links values (2, N'Бонусная система', 'URL')
+
+insert into Links values (3, N'Избранное', 'URL')
+insert into Links values (3, N'Публичная оферта', 'URL')
+insert into Links values (3, N'Политика конфиденциальности', 'URL')
+
+insert into Links values (4, N'ICONS', 'URL')
+insert into Links values (4, N'+38(073) 096 36 44', 'URL')
+insert into Links values (4, N'info@yanki.com', 'URL')
+
+
+
+
+
+
+
+
+
+insert into Products values (N'Белая куртка', 2900, 'img-c-1.png', 1, 3, 'Lorem Ipsum', 'Lorem Ipsum', 'new')
+insert into Products values (N'Синее пальто', 3150, 'img-c-2.png', 4, 2, 'Lorem Ipsum', 'Lorem Ipsum', null)
+insert into Products values (N'Бежевая шуба', 4200, 'img-c-3.png', 2, 1, 'Lorem Ipsum', 'Lorem Ipsum', null)
+insert into Products values (N'Синяя парка', 2900, 'img-c-4.png', 1, 2, 'Lorem Ipsum', 'Lorem Ipsum', 'new')
 
 insert into Products values (N'Белая куртка', 2900, 1, 'img-c-1.png', 1, 3, 'Lorem Ipsum', 'Lorem Ipsum', 'new')
 insert into Products values (N'Синее пальто', 3150, 4, 'img-c-2.png', 4, 2, 'Lorem Ipsum', 'Lorem Ipsum', null)
@@ -52,8 +161,6 @@ insert into Products values (N'Бежевая шуба', 4200, 5, 'img-c-3.png',
 insert into Products values (N'Синяя парка', 2900, 2, 'img-c-4.png', 1, 2, 'Lorem Ipsum', 'Lorem Ipsum', 'new')
 insert into Products values (N'Белая куртка', 2900, 1, 'img-c-1.png', 1, 3, 'Lorem Ipsum', 'Lorem Ipsum', 'new')
 insert into Products values (N'Синее пальто', 3150, 4, 'img-c-2.png', 4, 2, 'Lorem Ipsum', 'Lorem Ipsum', null)
-
-
 
 insert into Sizes values (1, 'XXS', 40)
 insert into Sizes values (2, 'XS', 42)

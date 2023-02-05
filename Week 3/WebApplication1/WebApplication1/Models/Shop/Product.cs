@@ -9,9 +9,15 @@
         public Category Category { get; set; }
 
         public string ImageUrl { get; set; }
+        
+        public ICollection<Product_Sizes> Sizes { get; set; }
 
-        public int SizeId { get; set; }
-        public Size Size { get; set; }
+        //public int SizesId { get; set; }
+        //public Product_Sizes Sizes { get; set; }
+
+        //public int SizeId {get; set; }
+        //public Size Size {get; set; }
+
         public int ColorId { get; set; }
         public Color Color { get; set; }
         public string? Description { get; set; }
