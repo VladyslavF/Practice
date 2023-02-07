@@ -1,9 +1,10 @@
 ﻿
 @{
     ViewData["Title"] = "Login";
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout__Static.cshtml";
 }
 @using WebApplication1.Models.Shop;
+@using System.Security.Claims;
 @model User;
 <!DOCTYPE html>
 <html lang="en">
@@ -16,13 +17,16 @@
 <body>
     <div>
             <div class="title">Профиль</div>
+
             <div class="fields">
+            <div>
+                Логин пользователя: @this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            </div>
+            <a asp-controller="Home" asp-action="LogOut"><button type="submit">Выйти</button></a>
+            <a asp-controller="Home" asp-action="Index">Назад на главную</a>
             </div>
             <br />
-        <a asp-controller="Home" asp-action="LogOut"><button type="submit">Выйти</button></a>
-    </div>
-    <div>
-        <a asp-controller="Home" asp-action="Index">Назад на главную</a>
+        
     </div>
 </body>
 </html>

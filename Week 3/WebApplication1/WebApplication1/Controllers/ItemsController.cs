@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -22,12 +23,22 @@ namespace WebApplication1.Controllers
         // GET: Items
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Menu.ToListAsync());
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            return View(await _context.Menu.ToListAsync());
         }
 
         // GET: Items/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Menu == null)
             {
                 return NotFound();
@@ -46,6 +57,11 @@ namespace WebApplication1.Controllers
         // GET: Items/Create
         public IActionResult Create()
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
 
@@ -68,6 +84,11 @@ namespace WebApplication1.Controllers
         // GET: Items/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Menu == null)
             {
                 return NotFound();
@@ -119,6 +140,11 @@ namespace WebApplication1.Controllers
         // GET: Items/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Menu == null)
             {
                 return NotFound();

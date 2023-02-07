@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -22,12 +23,22 @@ namespace WebApplication1.Controllers
         // GET: Categories
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Categories.ToListAsync());
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            return View(await _context.Categories.ToListAsync());
         }
 
         // GET: Categories/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Categories == null)
             {
                 return NotFound();
@@ -46,6 +57,11 @@ namespace WebApplication1.Controllers
         // GET: Categories/Create
         public IActionResult Create()
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
 
@@ -68,6 +84,11 @@ namespace WebApplication1.Controllers
         // GET: Categories/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Categories == null)
             {
                 return NotFound();
@@ -119,6 +140,11 @@ namespace WebApplication1.Controllers
         // GET: Categories/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Categories == null)
             {
                 return NotFound();

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -13,15 +14,19 @@ namespace WebApplication1.Controllers
     public class ProductsController : Controller
     {
         private readonly ShopDbContext _context;
-
+        
         public ProductsController(ShopDbContext context)
         {
             _context = context;
         }
-
         // GET: Products
         public async Task<IActionResult> Index()
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var shopDbContext = _context.Products.Include(p => p.Category).Include(p => p.Color);
             return View(await shopDbContext.ToListAsync());
         }
@@ -29,6 +34,11 @@ namespace WebApplication1.Controllers
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Products == null)
             {
                 return NotFound();
@@ -49,11 +59,16 @@ namespace WebApplication1.Controllers
         // GET: Products/Create
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id");
-            ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Id");
-            return View();
-        }
+             var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (userID != "admin@local" )
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
+                ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Name");
+                return View();
 
+        }
         // POST: Products/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -75,6 +90,11 @@ namespace WebApplication1.Controllers
         // GET: Products/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Products == null)
             {
                 return NotFound();
@@ -85,8 +105,8 @@ namespace WebApplication1.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id", product.CategoryId);
-            ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Id", product.ColorId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoryId);
+            ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Name", product.ColorId);
             return View(product);
         }
 
@@ -97,6 +117,11 @@ namespace WebApplication1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,CategoryId,ImageUrl,ColorId,Description,Ingredients,Status")] Product product)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id != product.Id)
             {
                 return NotFound();
@@ -130,6 +155,11 @@ namespace WebApplication1.Controllers
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Products == null)
             {
                 return NotFound();

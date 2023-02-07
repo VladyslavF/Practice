@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -22,6 +23,11 @@ namespace WebApplication1.Controllers
         // GET: Product_Sizes
         public async Task<IActionResult> Index()
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var shopDbContext = _context.Product_Sizes.Include(p => p.Product).Include(p => p.Size);
             return View(await shopDbContext.ToListAsync());
         }
@@ -29,6 +35,11 @@ namespace WebApplication1.Controllers
         // GET: Product_Sizes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Product_Sizes == null)
             {
                 return NotFound();
@@ -49,8 +60,13 @@ namespace WebApplication1.Controllers
         // GET: Product_Sizes/Create
         public IActionResult Create()
         {
-            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Id");
-            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Id");
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name");
+            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Name");
             return View();
         }
 
@@ -75,6 +91,11 @@ namespace WebApplication1.Controllers
         // GET: Product_Sizes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Product_Sizes == null)
             {
                 return NotFound();
@@ -85,8 +106,8 @@ namespace WebApplication1.Controllers
             {
                 return NotFound();
             }
-            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Id", product_Sizes.ProductId);
-            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Id", product_Sizes.SizeId);
+            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name", product_Sizes.ProductId);
+            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Name", product_Sizes.SizeId);
             return View(product_Sizes);
         }
 
@@ -130,6 +151,11 @@ namespace WebApplication1.Controllers
         // GET: Product_Sizes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Product_Sizes == null)
             {
                 return NotFound();

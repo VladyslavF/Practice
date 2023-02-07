@@ -5,6 +5,7 @@ body {
   margin: 0 10.4166666667vw 0 10.4166666667vw;
   display: grid;
   place-items: center;
+  justify-items: center;
   grid-auto-flow: row;
   grid-template-columns: 1fr;
 }
@@ -28,6 +29,7 @@ body {
   grid-auto-flow: row;
   margin: 2.0833333333vw 0 2.0833333333vw 0;
   grid-row-gap: 1.3888888889vw;
+  place-items: center;
 }
 .fields input {
   width: 27.7777777778vw;
@@ -56,13 +58,27 @@ body {
   }
 }
 
+.form-group, form {
+  display: grid;
+  place-items: center;
+}
+
+div {
+  justify-content: center;
+  justify-items: center;
+}
+
+a {
+  color: #252525;
+}
+
 button {
-  margin-top: 4.1666666667vw;
+  margin-top: 1.3888888889vw;
   background: #E0BEA2;
   border: none;
   font-size: 1.5277777778vw;
   color: #F5F5F5;
-  width: 100%;
+  width: 27.7777777778vw;
   height: 4.8611111111vw;
 }
 

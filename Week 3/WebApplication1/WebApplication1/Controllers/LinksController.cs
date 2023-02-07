@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +23,11 @@ namespace WebApplication1.Controllers
         // GET: Links
         public async Task<IActionResult> Index()
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var shopDbContext = _context.Links.Include(l => l.Item);
             return View(await shopDbContext.ToListAsync());
         }
@@ -29,6 +35,11 @@ namespace WebApplication1.Controllers
         // GET: Links/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Links == null)
             {
                 return NotFound();
@@ -48,6 +59,11 @@ namespace WebApplication1.Controllers
         // GET: Links/Create
         public IActionResult Create()
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             ViewData["ItemId"] = new SelectList(_context.Menu, "Id", "Id");
             return View();
         }
@@ -72,6 +88,11 @@ namespace WebApplication1.Controllers
         // GET: Links/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Links == null)
             {
                 return NotFound();
@@ -125,6 +146,11 @@ namespace WebApplication1.Controllers
         // GET: Links/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            var userID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userID != "admin@local")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Links == null)
             {
                 return NotFound();

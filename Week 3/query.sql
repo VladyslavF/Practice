@@ -137,7 +137,7 @@ insert into Links values (4, N'info@yanki.com', 'URL')
 
 insert into Users values ('Administrator', 'admin@local', 'password', 1)
 
-
+select * from users
 
 
 
