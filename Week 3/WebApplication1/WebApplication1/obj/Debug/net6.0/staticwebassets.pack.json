@@ -93,6 +93,18 @@
       "PackagePath": "staticwebassets\\css\\item.scss"
     },
     {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\login.css.map",
+      "PackagePath": "staticwebassets\\css\\login.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\login.scss",
+      "PackagePath": "staticwebassets\\css\\login.scss"
+    },
+    {
       "Id": "D:\\Projects\\Practice\\Week 3\\WebApplication1\\WebApplication1\\wwwroot\\css\\main.css",
       "PackagePath": "staticwebassets\\css\\main.css"
     },

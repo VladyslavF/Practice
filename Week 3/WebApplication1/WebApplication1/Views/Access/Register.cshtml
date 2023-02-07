@@ -1,0 +1,50 @@
+﻿@model WebApplication1.Models.Shop.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="~/css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<div class="title">Регистрация</div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+            <form asp-controller="Users" asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="fields">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" placeholder="Ваше имя*"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" placeholder="Ваш email*" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" placeholder="Ваш пароль*" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <!--
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="KeepLoggedIn" /> @Html.DisplayNameFor(model => model.KeepLoggedIn)
+                </label>
+            </div>
+                -->
+            <div class="form-group">
+                <button type="submit">Создать профиль</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-controller="Home" asp-action="Index">Назад на главную</a>
+</div>
+</body>
+</html>

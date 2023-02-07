@@ -11,5 +11,7 @@ namespace WebApplication1.Models.Shop
 
         public IEnumerable<Menu.Item> MenuItems { get; set; }
         public IEnumerable<Menu.Links> MenuLinks { get; set; }
+
+        public IEnumerable<User> Users { get; set; }
     }
 }

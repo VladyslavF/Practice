@@ -140,8 +140,6 @@ $adapt-res: 700px;
     grid-template-columns: repeat(4, 1fr);
     justify-self: end;
     a {
-      margin: 0;
-      padding: 0;
       width: calc(100vw * (25 / 1440));
       @media (max-width: $adapt-res) {
         width: calc(100vw * (20 / 375));

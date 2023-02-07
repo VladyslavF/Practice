@@ -127,8 +127,6 @@
   justify-self: end;
 }
 .header__icons a {
-  margin: 0;
-  padding: 0;
   width: 1.7361111111vw;
 }
 @media (max-width: 700px) {

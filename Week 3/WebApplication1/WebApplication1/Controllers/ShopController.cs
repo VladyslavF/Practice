@@ -26,11 +26,17 @@ namespace WebApplication1.Controllers
         }
         public IActionResult Item()
         {
-            return View();
+            var model = new ShopFull();
+            model.MenuItems = shopDbContext.MenuItems.ToList();
+            model.MenuLinks = shopDbContext.Links.ToList();
+            return View(model);
         }
         public IActionResult Cart()
         {
-            return View();
+            var model = new ShopFull();
+            model.MenuItems = shopDbContext.MenuItems.ToList();
+            model.MenuLinks = shopDbContext.Links.ToList();
+            return View(model);
         }
     }
 }

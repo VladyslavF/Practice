@@ -135,7 +135,7 @@ insert into Links values (4, N'ICONS', 'URL')
 insert into Links values (4, N'+38(073) 096 36 44', 'URL')
 insert into Links values (4, N'info@yanki.com', 'URL')
 
-
+insert into Users values ('Administrator', 'admin@local', 'password', 1)
 
 
 
