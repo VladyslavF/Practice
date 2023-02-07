@@ -126,22 +126,14 @@
   grid-template-columns: repeat(4, 1fr);
   justify-self: end;
 }
-.header__icons a {
-  width: 1.7361111111vw;
-}
-@media (max-width: 700px) {
-  .header__icons a {
-    width: 5.3333333333vw;
-  }
-}
 @media (max-width: 700px) {
   .header__icons {
     order: 1;
   }
-  .header__icons img:first-child {
+  .header__icons a:first-child {
     display: none;
   }
-  .header__icons img:nth-child(2) {
+  .header__icons a:nth-child(2) {
     display: none;
   }
 }
